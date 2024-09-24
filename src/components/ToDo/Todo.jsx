@@ -12,7 +12,7 @@ export const ListTodo = ({ prop }) => {
                 <ListItem
                     key={value.id}
                 >
-                    <ListItemText primary={`To do: ${value.title}`} />
+                    <ListItemText primary={`To do: ${value.title} | ${value.completed === true ? "Completed" : "Not completed"}`} />
                 </ListItem>
             ))}
         </List>
